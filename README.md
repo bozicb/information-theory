@@ -26,11 +26,11 @@ The code will count all categories and use the `entropy` function as helper. The
 | ...       | ...   |
 | feature n | float |
 
-## ig_ration(float, float)
+## ig_ratio(float, float)
 Only here for reasons of completeness. This is just dividing IG by feature entropy, easy peasy.
 
 ## gini_index(list)
-Same as [entropy](#entropy(list)), but instead using the Gini index as metric.
+Same as [entropy](#entropylist), but instead using the Gini index as metric.
 
 ## How to run the code
 To run the code, simply import `entropy.py` with `import(entropy)` (it has to be in your working directory). When you want to call one of the functions, use `entropy.[function_name]`.
