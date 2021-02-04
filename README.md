@@ -8,6 +8,6 @@ In the following functions are classified by the area of information theory they
 The entropy module covers concepts such as entropy, information gain, etc. Here is how to use the different functions.
 
 ### entropy(list)
-The entropy function takes a list of probabilities and uses it to calculate entropy for a descriptive feature or overall entropy for a target. A list `x` would be used as follows: <img src="images/equation1.png" width="100">
+The entropy function takes a list of probabilities and uses it to calculate entropy for a descriptive feature or overall entropy for a target. A list `x` would be used as follows: <img src="images/equation1.png" width="200">
 
 ### ig(DataFrame)
