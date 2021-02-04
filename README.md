@@ -14,6 +14,6 @@ The entropy function takes a list of probabilities and uses it to calculate entr
 The ig (information gain) function takes a [pandas](https://pandas.pydata.org/) `DataFrame` with the following format:
 
 | Descriptive Feature 1 | Descriptive Feature 2 | ... | Descriptive Feature n | Target Feature |
-|----------------------------------------------------------------------------------------------|
+| -------------------------------------------------------------------------------------------- |
 | random category       | random category       | ... | random category       | random category|
 | ...                   | ...                   | ... | ...                   | ...            |
