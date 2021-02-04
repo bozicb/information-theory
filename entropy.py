@@ -2,11 +2,7 @@ import math
 import pandas as pd
 
 def entropy(probabilities):
-    ent = 0
-    for p in probabilities:
-        ent += p*math.log(p,2)
-    ent = ent*(-1)
-    return ent
+    return sum([p*math.log(p,2) for p in probabilities])*(-1) # apply entropy formula to probabilities
 
 def ig(abt):
     num_columns = len(abt.columns)
@@ -28,3 +24,9 @@ def ig(abt):
         rems.append(sum(part_ents))
     infGains = e - rems
     return pd.DataFrame({'feature':features,'IG':infGains})
+
+def ig_ratio(iG, feature_entropy):
+    return iG/feature_entropy # I know, this is deadly, right? :D
+
+def gini_index(probabilities):
+    return 1-sum([p**2 for p in probabilities]) # a lil' list comprehension for the gini index, not too shabby ...
